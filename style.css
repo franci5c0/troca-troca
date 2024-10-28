@@ -4,81 +4,50 @@
 }
 
 :root {
-  --botaoentrar: #1e90ff;
+  --backgrounduser: #f5f5f5;
+  --fundobotao: #1e90ff;
   --texto: #ffffff;
-  --fundousuario: #dcdcdc;
-  --bordas: #F5F5F5;
 }
 
 main.principal {
   display: flex;
-  gap: 20px;
-  div.usuario-nao-logado {
+  div.container-user {
+    width: 30%;
+    background-color: var(--backgrounduser);
     display: flex;
-    background-color: var(--fundousuario);
-    box-shadow: 0px 0px 3px 0px;
-    width: 400px;
-    height: 1000px;
-    flex-direction: column;
-    align-items: center;
-    div.perfil-usuario {
-      margin: 50px;
+    justify-content: center;
+
+    div.usuario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      div.like-deslike-numero {
+        display: flex;
+        gap: 100px;
+      }
+
       img {
         width: 100px;
-        border-radius: 50px;
       }
-    }
 
-    h2.titulo-usuario {
-      font-family: "Roboto";
-      margin-bottom: 20px;
-    }
-
-    div.contadores {
-      display: flex;
-      gap: 140px;
-      h3.number {
-        background: none;
-        border: none;
-        font-size: 30px;
-      }
-    }
-
-    div.like-deslike {
-      display: flex;
-      gap: 50px;
-      margin-bottom: 40px;
-      img {
-        width: 100px;
-        cursor: pointer;
-      }
-      img:hover {
-        transform: scale(1.1);
-      }
-    }
-    div.botao-entrar {
       button.entrar {
         width: 80px;
         height: 40px;
-        border-radius: 5px;
-        background-color: var(--botaoentrar);
+        border-radius: 8px;
+        background-color: var(--fundobotao);
         color: var(--texto);
-        cursor: pointer;
-      }
-      button.entrar:hover {
-        transform: scale(1.1);
       }
     }
   }
 
-  section.produtos {
-    width: 100;
-    display: flex;
-    border: solid 10px var(--bordas);
-    div.imagem-produto {
-      img {
-       border: solid 5px var(--botaoentrar); 
-      }
+  div.container-images {
+    width: 70%;
+    display: grid;
+    img {
+      width: 100%;
+      height: 
+      600px;
     }
   }
 }

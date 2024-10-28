@@ -3,55 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troca tudo</title>
+    <title>Troca-tudo</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rozha+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rozha+One&display=swap');
-</style>
-
+    
 <main class="principal">
-<div class="usuario-nao-logado">
-    <div class="perfil-usuario">
-        <img src="/avatars/default-avatar.jpg" alt="usuario" class="usuario">
-    </div>
-        <h2 class="titulo-usuario" >Usuário não logado</h2>
-    <div class="contadores">
-        <h3 class="number">0</h3>
-        <h3 class="number">0</h3>
-    </div>
-    <div class="like-deslike">
-        <img src="/images/curtidas.jpg" alt="curtidas" class="icones-usuario">
-        <img src="/images/descurtidas.jpg" alt="descurtidas" class="icones-usuario">
-    </div> 
-    <div class="botao-entrar">
+<div class="container-user">
+    <div class="usuario">
+        <img src="/avatars/default-avatar.jpg" alt="">
+            <h2 class="usuario-nome">Usuário não logado</h2>
+            
+        <div class="like-deslike-numero">
+            <h3 class="number" >0</h3>
+            <h3 class="number" >0</h3>
+        </div>
+
+        <div class="like-deslike">
+            <img src="/images/curtidas.jpg" alt="">
+            <img src="/images/descurtidas.jpg" alt="">
+        </div>
+
+         <div class="botao-entrar">
         <button class="entrar" type="button">Entrar</button>
-    </div> 
+    </div>
+    </div>
+
 </div>
 
-<section class="produtos">
-    <div class="imagem-produto">
-        <div class="produtinhos">
-            <strong class="produto-nome">Produto 1</strong>
-            <img src="/images/produto1.jpg" alt="celular" width="500px" height="300px">
-        </div>
-        <div class="produtinhos">
-            <strong class="produto-nome">Produto 2</strong>
-            <img src="/images/produto2.jpg" alt="fone" width="500px" height="300px">
-        </div>
-        <div class="produtinhos">
-            <strong class="produto-nome">Produto 3</strong>
-            <img src="/images/produto3.jpg" alt="drone" width="500px" height="300px">
-        </div>
-    </div>
-</section>
-</main>
+<div class="container-images">
+        <img src="/images/produto1.jpg" alt="">
+        <img src="/images/produto2.jpg" alt="">
+        <img src="/images/produto3.jpg" alt="">
+</div>
+</main> 
+
+
 
 <footer class="rodape">
-
+    <img src="/images/like.jpg" alt="">
 </footer>
+
+
+
 
 </body>
 </html>
